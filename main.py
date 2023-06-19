@@ -5,7 +5,7 @@ import pickle
 
 app = Flask(__name__)
 data = pd.read_csv('cleaned_data.csv')
-pipe = pickle.load(open('Model2.pkl','rb'))
+pipe = pickle.load(open('Model.pkl','rb'))
 
 
 @app.route('/')
